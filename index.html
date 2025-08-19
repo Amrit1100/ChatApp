@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iChat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="side">
+        <div class="head">Users Connected</div>
+        <!-- <div class="entry" id="id" >1. Amritpreet Singh </div> -->
+      </div>
+      <div class="main">
+        <nav>
+          <button class="users">Users</button>
+          <div class="first-container">
+            <div class="logo">
+              <img src="logo.png" alt="This is the image of logo" />
+            </div>
+            <div class="heading">iChat-Chat Application</div>
+          </div>
+        </nav>
+        <div class="container">
+          <!-- <div class="coming"><div class="message left">Amrit: How are you</div></div>
+        <div class="going"><div class="message right">Rohan : I am good bhai.</div></div>
+        <div class="custom"><div class="msg">Amrit joined the chat</div></div> -->
+        </div>
+       
+        <form action="#">
+         
+          <input
+            type="text"
+            name="messageInp"
+            id="messageInp"
+            placeholder="Type here.."
+          />
+          <button class="btn" type="submit">Send</button>
+          <div class="speak">Speak</div>
+        </form>
+        <audio id="audioplayback" controls></audio>
+      </div>
+    </div>
+  </body>
+</html>
