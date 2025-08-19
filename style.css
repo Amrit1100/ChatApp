@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px dotted; */
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    /* background-color: rgb(0, 0, 0); */
+    background-color: black;
+    transition: all 0.3s linear;
+}
+
+.dark{
+    background-color: rgba(56, 54, 54, 0.897);
+    color: black;
+}
+.main-container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.side{
+    background-color: black;
+    width: 20%;
+    height: 100vh;
+    overflow-y: auto;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.side .head{
+    text-align: center;
+}
+
+.entry{
+    margin: 10px;
+    background-color: rgba(128, 128, 128, 0.496);
+    padding: 5px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+.main{
+    width: 80%;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.users{
+    display: none;
+}
+.heading{
+    font-size: 45px;
+    color: white;
+}
+.first-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo{
+    margin: 10px;
+}
+
+.logo img{
+    /* background-color: green; */
+    width: 80px;
+}
+
+
+
+.container{
+    padding: 15px 30px;
+    background-color: rgb(132 108 108 / 23%);
+    max-width: 1100px;
+    margin:  10px auto;
+    height: 70vh;
+    height: 70vh;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.custom{
+    text-align: center;
+    margin: 10px;
+}
+.custom .msg{
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.718);
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.message{
+    width: 35%;
+    padding: 12px 15px;
+    border-radius: 7px;
+    letter-spacing: 1.5px;
+    margin: 10px 0px;
+    border: none;
+    transition: all 0.1s linear;
+    font-weight: 500;
+    overflow-x: auto;
+}
+   
+
+.left{
+    background-color: rgb(8, 52, 228);
+    color: white;
+}
+
+.right{
+    background-color: rgb(10, 118, 10);
+    color: white;
+}
+
+.coming{
+    display: flex;
+    justify-content: left;
+}
+
+.going{
+    display: flex;
+    justify-content: right;
+}
+
+form{
+    margin: 10px auto;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 18px;
+}
+
+form input{
+    flex-grow: 2;
+    padding: 10px 22px;
+    border: none;
+    outline: 0.5px solid rgba(128, 128, 128, 0.481);
+    border-radius: 35px;
+}
+
+form input:focus{
+    outline: 1px solid rgba(35, 157, 5, 0.951);
+}
+
+.btn{
+    padding: 10px 15px;
+    border: 1px solid green;
+    color: green;
+    background-color: white;
+    border-radius: 30px;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: green;
+    color: white;
+}
+
+
+@media only screen and (max-width : 600px){
+    .heading{
+        font-size: 20px;
+    }
+
+    .logo img{
+        width: 30px;
+    }
+
+    .head{
+        font-size: 8px;
+    }
+
+    .msg{
+        font-size: 10px;
+    }
+
+    .message{
+        font-size: 12px;
+        width: 70%;
+        padding: 8px 12px
+    }
+
+    .entry{
+        font-size: 7px;
+        margin: 1px;
+        background-color: rgba(128, 128, 128, 0.496);
+        padding: 1px;
+        border-radius: 2px;
+        letter-spacing: 1px;
+    }
+
+    .side {
+        position: absolute;
+        transform: translate(-100%);
+        padding: 0px;
+        z-index: 10;
+        width: 30%;
+        transition: all 0.3s linear;
+        padding: 4px;
+
+    }
+
+    .show{
+        transform: translate(0%);
+        
+    }
+
+    .main{
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+        position: relative;
+    }
+
+    form{
+        position: fixed;
+        width: 100%;
+        bottom: 10px;
+    }
+
+    .users{
+        display: block;
+        padding: 10px;
+        background-color: #000000;
+        border-radius: 30px;
+        color: white;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: sticky;
+    }
+
+    .first-container{
+        gap: 6px;
+    }
+
+    .container{
+        height: 80vh;
+        padding: 10px;
+    }
+    form{
+        padding: 0px 12px;
+        gap: 13px;
+        padding: 0px 5px;
+    }
+}
+
+.hide{
+    display: none;
+}
+
+
+.speak{
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+}
