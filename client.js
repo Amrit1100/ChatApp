@@ -1,4 +1,4 @@
-const socket = io('http://4.204.24.46:8000')
+const socket = io('https://4.204.24.46:8000')
 let username = ""
 username = prompt("Please enter your name")
 let l1=[]
